@@ -1,6 +1,15 @@
 ## Create steps
 
-## Step up ampllify and configure it with aws credentials
+## Setup existing
+
+- `git clone git clone git@github.com:rudijs/amplify-notetaker.git`
+- `cd amplify-notetaker`
+- `amplify env add`
+- `amplify push` (recreats aws-exports.js - todo: check if another way to do this)
+- `npm install`
+- `npm start`
+
+## Step up new ampllify and configure it with aws credentials
 
 - `npm install -g @aws-amplify/cli`
 - `amplify configure`
@@ -53,7 +62,8 @@ import aws_exports from "./aws-exports";
 Amplify.configure(aws_exports);
 ```
 
-## Update .gitignore
+## Configure Auth
 
-- Exlucde entire /amplify folder
-- Exclude .graphqlconfig.yml
+- Update App.js
+- `import { withAuthenticator } from "aws-amplify-react";`
+- `export default withAuthenticator(App, { includeGreetings: true });`
