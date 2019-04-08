@@ -1,22 +1,22 @@
 // eslint-disable
 // this is an auto generated file. This will be overwritten
 
-export const onCreateNote = `subscription OnCreateNote {
-  onCreateNote {
+export const onCreateNoteo = `subscription OnCreateNoteo {
+  onCreateNoteo {
     id
     note
   }
 }
 `;
-export const onUpdateNote = `subscription OnUpdateNote {
-  onUpdateNote {
+export const onUpdateNoteo = `subscription OnUpdateNoteo {
+  onUpdateNoteo {
     id
     note
   }
 }
 `;
-export const onDeleteNote = `subscription OnDeleteNote {
-  onDeleteNote {
+export const onDeleteNoteo = `subscription OnDeleteNoteo {
+  onDeleteNoteo {
     id
     note
   }

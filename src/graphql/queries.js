@@ -1,19 +1,19 @@
 // eslint-disable
 // this is an auto generated file. This will be overwritten
 
-export const getNote = `query GetNote($id: ID!) {
-  getNote(id: $id) {
+export const getNoteo = `query GetNoteo($id: ID!) {
+  getNoteo(id: $id) {
     id
     note
   }
 }
 `;
-export const listNotes = `query ListNotes(
-  $filter: ModelNoteFilterInput
+export const listNoteos = `query ListNoteos(
+  $filter: ModelNoteoFilterInput
   $limit: Int
   $nextToken: String
 ) {
-  listNotes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+  listNoteos(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
       note

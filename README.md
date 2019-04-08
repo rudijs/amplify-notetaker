@@ -5,7 +5,7 @@
 - `git clone git clone git@github.com:rudijs/amplify-notetaker.git`
 - `cd amplify-notetaker`
 - `amplify env add`
-- `amplify push` (recreats aws-exports.js - todo: check if another way to do this)
+- `amplify env pull`
 - `npm install`
 - `npm start`
 

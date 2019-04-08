@@ -15,7 +15,7 @@
         "name" : "Query",
         "description" : null,
         "fields" : [ {
-          "name" : "getNote",
+          "name" : "getNoteo",
           "description" : null,
           "args" : [ {
             "name" : "id",
@@ -33,20 +33,20 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Note",
+            "name" : "Noteo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "listNotes",
+          "name" : "listNoteos",
           "description" : null,
           "args" : [ {
             "name" : "filter",
             "description" : null,
             "type" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNoteFilterInput",
+              "name" : "ModelNoteoFilterInput",
               "ofType" : null
             },
             "defaultValue" : null
@@ -71,7 +71,7 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "ModelNoteConnection",
+            "name" : "ModelNoteoConnection",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -83,7 +83,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "OBJECT",
-        "name" : "Note",
+        "name" : "Noteo",
         "description" : null,
         "fields" : [ {
           "name" : "id",
@@ -140,7 +140,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "OBJECT",
-        "name" : "ModelNoteConnection",
+        "name" : "ModelNoteoConnection",
         "description" : null,
         "fields" : [ {
           "name" : "items",
@@ -151,7 +151,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "OBJECT",
-              "name" : "Note",
+              "name" : "Noteo",
               "ofType" : null
             }
           },
@@ -175,7 +175,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "ModelNoteFilterInput",
+        "name" : "ModelNoteoFilterInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -204,7 +204,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNoteFilterInput",
+              "name" : "ModelNoteoFilterInput",
               "ofType" : null
             }
           },
@@ -217,7 +217,7 @@
             "name" : null,
             "ofType" : {
               "kind" : "INPUT_OBJECT",
-              "name" : "ModelNoteFilterInput",
+              "name" : "ModelNoteoFilterInput",
               "ofType" : null
             }
           },
@@ -227,7 +227,7 @@
           "description" : null,
           "type" : {
             "kind" : "INPUT_OBJECT",
-            "name" : "ModelNoteFilterInput",
+            "name" : "ModelNoteoFilterInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -455,7 +455,7 @@
         "name" : "Mutation",
         "description" : null,
         "fields" : [ {
-          "name" : "createNote",
+          "name" : "createNoteo",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -465,7 +465,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "CreateNoteInput",
+                "name" : "CreateNoteoInput",
                 "ofType" : null
               }
             },
@@ -473,13 +473,13 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Note",
+            "name" : "Noteo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "updateNote",
+          "name" : "updateNoteo",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -489,7 +489,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "UpdateNoteInput",
+                "name" : "UpdateNoteoInput",
                 "ofType" : null
               }
             },
@@ -497,13 +497,13 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Note",
+            "name" : "Noteo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "deleteNote",
+          "name" : "deleteNoteo",
           "description" : null,
           "args" : [ {
             "name" : "input",
@@ -513,7 +513,7 @@
               "name" : null,
               "ofType" : {
                 "kind" : "INPUT_OBJECT",
-                "name" : "DeleteNoteInput",
+                "name" : "DeleteNoteoInput",
                 "ofType" : null
               }
             },
@@ -521,7 +521,7 @@
           } ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Note",
+            "name" : "Noteo",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -533,7 +533,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "CreateNoteInput",
+        "name" : "CreateNoteoInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -564,7 +564,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "UpdateNoteInput",
+        "name" : "UpdateNoteoInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -595,7 +595,7 @@
         "possibleTypes" : null
       }, {
         "kind" : "INPUT_OBJECT",
-        "name" : "DeleteNoteInput",
+        "name" : "DeleteNoteoInput",
         "description" : null,
         "fields" : null,
         "inputFields" : [ {
@@ -616,34 +616,34 @@
         "name" : "Subscription",
         "description" : null,
         "fields" : [ {
-          "name" : "onCreateNote",
+          "name" : "onCreateNoteo",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Note",
+            "name" : "Noteo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onUpdateNote",
+          "name" : "onUpdateNoteo",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Note",
+            "name" : "Noteo",
             "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
         }, {
-          "name" : "onDeleteNote",
+          "name" : "onDeleteNoteo",
           "description" : null,
           "args" : [ ],
           "type" : {
             "kind" : "OBJECT",
-            "name" : "Note",
+            "name" : "Noteo",
             "ofType" : null
           },
           "isDeprecated" : false,
@@ -757,61 +757,6 @@
         "enumValues" : null,
         "possibleTypes" : null
       }, {
-        "kind" : "ENUM",
-        "name" : "ModelSortDirection",
-        "description" : null,
-        "fields" : null,
-        "inputFields" : null,
-        "interfaces" : null,
-        "enumValues" : [ {
-          "name" : "ASC",
-          "description" : null,
-          "isDeprecated" : false,
-          "deprecationReason" : null
-        }, {
-          "name" : "DESC",
-          "description" : null,
-          "isDeprecated" : false,
-          "deprecationReason" : null
-        } ],
-        "possibleTypes" : null
-      }, {
-        "kind" : "INPUT_OBJECT",
-        "name" : "ModelBooleanFilterInput",
-        "description" : null,
-        "fields" : null,
-        "inputFields" : [ {
-          "name" : "ne",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Boolean",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "eq",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "Boolean",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        } ],
-        "interfaces" : null,
-        "enumValues" : null,
-        "possibleTypes" : null
-      }, {
-        "kind" : "SCALAR",
-        "name" : "Boolean",
-        "description" : "Built-in Boolean",
-        "fields" : null,
-        "inputFields" : null,
-        "interfaces" : null,
-        "enumValues" : null,
-        "possibleTypes" : null
-      }, {
         "kind" : "INPUT_OBJECT",
         "name" : "ModelIntFilterInput",
         "description" : null,
@@ -902,6 +847,61 @@
           },
           "defaultValue" : null
         } ],
+        "interfaces" : null,
+        "enumValues" : null,
+        "possibleTypes" : null
+      }, {
+        "kind" : "ENUM",
+        "name" : "ModelSortDirection",
+        "description" : null,
+        "fields" : null,
+        "inputFields" : null,
+        "interfaces" : null,
+        "enumValues" : [ {
+          "name" : "ASC",
+          "description" : null,
+          "isDeprecated" : false,
+          "deprecationReason" : null
+        }, {
+          "name" : "DESC",
+          "description" : null,
+          "isDeprecated" : false,
+          "deprecationReason" : null
+        } ],
+        "possibleTypes" : null
+      }, {
+        "kind" : "INPUT_OBJECT",
+        "name" : "ModelBooleanFilterInput",
+        "description" : null,
+        "fields" : null,
+        "inputFields" : [ {
+          "name" : "ne",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Boolean",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        }, {
+          "name" : "eq",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "Boolean",
+            "ofType" : null
+          },
+          "defaultValue" : null
+        } ],
+        "interfaces" : null,
+        "enumValues" : null,
+        "possibleTypes" : null
+      }, {
+        "kind" : "SCALAR",
+        "name" : "Boolean",
+        "description" : "Built-in Boolean",
+        "fields" : null,
+        "inputFields" : null,
         "interfaces" : null,
         "enumValues" : null,
         "possibleTypes" : null
