@@ -1,18 +1,40 @@
 import React, { Component } from "react";
 import { withAuthenticator } from "aws-amplify-react";
+import { API, graphqlOperation } from "aws-amplify";
+import { createNote } from "./graphql/mutations";
+import { listNotes } from "./graphql/queries";
 
 class App extends Component {
   state = {
-    notes: [{ id: 1, note: "Hello world" }]
+    note: "",
+    notes: []
   };
+
+  async componentDidMount() {
+    const result = await API.graphql(graphqlOperation(listNotes));
+    this.setState({ notes: result.data.listNotes.items });
+  }
+
+  handleChangeNote = event => this.setState({ note: event.target.value });
+
+  handleAddNote = async event => {
+    event.preventDefault();
+    const { note, notes } = this.state;
+    const input = { note };
+    const result = await API.graphql(graphqlOperation(createNote, { input }));
+    const newNote = result.data.createNote;
+    const updatedNotes = [newNote, ...notes];
+    this.setState({ notes: updatedNotes, note: "" });
+  };
+
   render() {
-    const { notes } = this.state;
+    const { notes, note } = this.state;
 
     return (
       <div className="flex flex-column items-center justify-center pa3 bg-washed-red">
         <h1 className="code f2-l">Amplify Notetaker</h1>
-        <form className="mb3">
-          <input type="text" className="pa2 f4" placeholder="Write your note" />
+        <form className="mb3" onSubmit={this.handleAddNote}>
+          <input type="text" className="pa2 f4" placeholder="Write your note" onChange={this.handleChangeNote} value={note} />
           <button className="pa2 f4" type="submit">
             Add Note
           </button>
