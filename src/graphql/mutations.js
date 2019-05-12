@@ -1,22 +1,22 @@
 // eslint-disable
 // this is an auto generated file. This will be overwritten
 
-export const createNoteo = `mutation CreateNoteo($input: CreateNoteoInput!) {
-  createNoteo(input: $input) {
+export const createNote = `mutation CreateNote($input: CreateNoteInput!) {
+  createNote(input: $input) {
     id
     note
   }
 }
 `;
-export const updateNoteo = `mutation UpdateNoteo($input: UpdateNoteoInput!) {
-  updateNoteo(input: $input) {
+export const updateNote = `mutation UpdateNote($input: UpdateNoteInput!) {
+  updateNote(input: $input) {
     id
     note
   }
 }
 `;
-export const deleteNoteo = `mutation DeleteNoteo($input: DeleteNoteoInput!) {
-  deleteNoteo(input: $input) {
+export const deleteNote = `mutation DeleteNote($input: DeleteNoteInput!) {
+  deleteNote(input: $input) {
     id
     note
   }

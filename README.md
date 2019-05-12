@@ -1,5 +1,9 @@
 ## Create steps
 
+## Prerequisites
+
+- `npm install -g @aws-amplify/cli`
+
 ## Setup existing
 
 - `git clone git clone git@github.com:rudijs/amplify-notetaker.git`
@@ -11,7 +15,6 @@
 
 ## Step up new ampllify and configure it with aws credentials
 
-- `npm install -g @aws-amplify/cli`
 - `amplify configure`
 - follow the prompts, create and administrator level profile
 
